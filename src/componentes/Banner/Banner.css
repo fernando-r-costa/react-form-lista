@@ -1,0 +1,18 @@
+.banner {
+    background-color: #6278f7;
+    background-image: url(../../../public/imagens/banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    margin: 0;
+    color: rgb(238, 158, 8);
+    font-size: 50px;
+    text-shadow: 11px 7px 8px black;
+}
