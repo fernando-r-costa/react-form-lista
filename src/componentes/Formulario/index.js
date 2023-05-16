@@ -13,7 +13,7 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoTecnologiaCadastrado({
+        props.aTecnologiaCadastrada({
             tecnologia,
             status,
             imagem,
@@ -31,7 +31,7 @@ const Formulario = (props) => {
                 <h2>Preencha os dados para criar o card da tecnologia.</h2>
                 <CampoTexto
                     obrigatorio={true}
-                    label="Tecnologia"
+                    label="Nome"
                     placeholder="Digite a tecnologia"
                     valor={tecnologia}
                     aoAlterado={valor => setTecnologia(valor)}

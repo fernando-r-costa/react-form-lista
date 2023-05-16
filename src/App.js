@@ -24,16 +24,16 @@ function App() {
     }
   ]
 
-  const [tecnologias, setTecnologia] = useState([])
+  const [tecnologias, setTecnologias] = useState([])
 
-  const aoNovoTecnologiaAdicionado = (tecnologia) => {
-    setTecnologia([...tecnologias, tecnologia])
+  const aNovaTecnologiaAdicionada = (tecnologia) => {
+    setTecnologias([...tecnologias, tecnologia])
   }
 
   return (
     <div className="App">
       <Banner />
-      <Formulario areas={areas.map(area => area.nome)} aoTecnologiaCadastrado={tecnologia => aoNovoTecnologiaAdicionado(tecnologia)} />
+      <Formulario areas={areas.map(area => area.nome)} aTecnologiaCadastrada={tecnologia => aNovaTecnologiaAdicionada(tecnologia)} />
 
       {areas.map(area => <Area
         key={area.nome}
